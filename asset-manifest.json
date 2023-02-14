@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/lifestyle-react-project/static/css/main.c5bbc259.css",
-    "main.js": "/lifestyle-react-project/static/js/main.a28d6c5c.js",
+    "main.js": "/lifestyle-react-project/static/js/main.d9d52c01.js",
     "static/js/787.00494056.chunk.js": "/lifestyle-react-project/static/js/787.00494056.chunk.js",
     "static/media/piano.mp3": "/lifestyle-react-project/static/media/piano.d1800c97e13ecba22b82.mp3",
     "static/media/position-1.jpg": "/lifestyle-react-project/static/media/position-1.6570c0a731f7253ef9ee.jpg",
@@ -10,11 +10,11 @@
     "static/media/blob-scene-haikei.svg": "/lifestyle-react-project/static/media/blob-scene-haikei.318b8218c02ebd908924.svg",
     "index.html": "/lifestyle-react-project/index.html",
     "main.c5bbc259.css.map": "/lifestyle-react-project/static/css/main.c5bbc259.css.map",
-    "main.a28d6c5c.js.map": "/lifestyle-react-project/static/js/main.a28d6c5c.js.map",
+    "main.d9d52c01.js.map": "/lifestyle-react-project/static/js/main.d9d52c01.js.map",
     "787.00494056.chunk.js.map": "/lifestyle-react-project/static/js/787.00494056.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c5bbc259.css",
-    "static/js/main.a28d6c5c.js"
+    "static/js/main.d9d52c01.js"
   ]
 }
