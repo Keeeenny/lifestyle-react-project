@@ -1,0 +1,37 @@
+section {
+    margin: auto;
+    margin-top: 100px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section h1 {
+    font-size: 80px;
+}
+
+section p {
+    color: white;
+    font-size: 50px;
+}
+
+section a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background-color: #361919;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    transition: top 0.3s;
+    top: 0;
+}
+
+section a:hover {
+    top: -5px;
+}

@@ -1,0 +1,14 @@
+.message {
+    position: absolute;
+    top: -30px;
+    color: white;
+}
+
+/* tablet - */
+@media only screen and (min-width: 507px) and (max-width: 801px) {
+
+    .message {
+        top: -5px;
+    }
+
+}

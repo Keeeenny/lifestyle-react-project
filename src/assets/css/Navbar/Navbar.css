@@ -1,0 +1,99 @@
+.nav-bar {
+    margin: auto;
+    margin-top: 40px;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 90px;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.nav-bar ul li a {
+    color: #e79e9e;
+    font-size: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+
+
+.nav-bar ul li a .slice-top {
+    position: relative;
+    height: 20px;
+    overflow: hidden;
+    top: 0;
+}
+
+.nav-bar ul li a .slice-bot {
+    position: relative;
+    height: 20px;
+    overflow: hidden;
+    bottom: 0;
+}
+
+.nav-bar ul li a .slice-bot span{
+    top: -20px;
+    position: absolute;
+}
+
+.nav-bar ul li a:hover .slice-top {
+    top: -2px;
+    transition: all 0.2s cubic-bezier(0.1, 0.1, 0.3, 0.1)
+}
+
+.nav-bar ul li a:hover .slice-bot {
+    bottom: -4px;
+    transition: all 0.2s cubic-bezier(0.1, 0.1, 0.3, 0.1)
+}
+
+
+.btn-slice::before {
+    content: '';
+    position: absolute;
+    background-color: #e79e9e;
+    height: 2px;
+    width: 0px;
+    top: 50%;
+    left: -15%;
+
+}
+
+.btn-slice:hover:before {
+    width: 130%;
+    transition: 0.4s;
+
+}   
+
+
+/*mobile*/
+@media only screen and (max-width: 506px) {
+    .nav-bar {
+        max-width: 350px;
+        margin-top: 20px;
+    }
+
+    .nav-bar ul li a {
+        font-size: 25px;
+        top: 4px;
+    }
+}
+
+/* tablet */
+@media only screen and (min-width: 507px) and (max-width: 801px) {
+    .nav-bar {
+        width: 80%;
+        max-width: 600px;
+    }
+}

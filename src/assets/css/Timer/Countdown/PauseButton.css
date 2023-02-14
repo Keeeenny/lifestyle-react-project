@@ -1,0 +1,11 @@
+.pause-button {
+    width: 80px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.pause-button svg {
+    color: white;
+}

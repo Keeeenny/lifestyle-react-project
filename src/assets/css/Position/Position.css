@@ -1,0 +1,106 @@
+.position {
+    max-width: 900px;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    border-radius: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../img/blob-scene-haikei.svg');
+    background-size: cover;
+}
+
+
+.position h1 {
+    font-size: 2.4rem;
+    margin-bottom: 30px;
+}
+
+.position  p {
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+ol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    max-width: 600px;
+}
+
+ol li {
+    width: 300px;
+    text-align: center;
+    font-size: 1.8rem;
+    list-style: none;
+    margin-top: 80px;
+    font-weight: bold;
+}
+
+ol p {
+    margin-top: 40px;
+    width: 650px;
+}
+
+img {
+    margin-top: 80px;
+    border-radius: 20px;
+}
+
+/*mobile*/
+@media only screen and (max-width: 506px) {
+
+    .position {
+        max-width: 90%;
+        margin-top: 50px;
+        border-radius: 30px;
+    }
+
+    .position h1 {
+        font-size: 1.7rem;
+    }
+
+    ol li {
+        font-size: 1.4rem;
+    }
+
+    .steps p {
+      max-width: 320px;
+      font-size: 0.9rem;
+    }
+
+    img {
+        width: 55%;
+    }
+
+}
+
+/* tablet */
+@media only screen and (min-width: 507px) and (max-width: 801px) {
+    .position {
+        max-width: 90%;
+        margin-top: 50px;
+        border-radius: 50px;
+    }
+
+    .position h1 {
+        font-size: 2rem;
+    }
+
+    ol li {
+        font-size: 1.6rem;
+    }
+
+    .steps p {
+      max-width: 400px;
+      font-size: 0.9rem;
+    }
+}
+
