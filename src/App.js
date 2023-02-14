@@ -17,11 +17,9 @@ function App() {
   return (
 
     <>
-      {/* <Navbar />
-      <Timer /> */}
       <Navbar />
       <Routes>
-        <Route path="/" element={<Timer />} />
+        <Route path="/lifestyle-react-project/" element={<Timer />} />
         <Route path="/positions" element={<Position />} />
         <Route path="*" element={<Error />} />
       </Routes>

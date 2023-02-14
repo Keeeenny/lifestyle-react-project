@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className='nav-bar'>
         <ul>
             <li>
-              <Link to="/" className='btn-slice'>
+              <Link to="/lifestyle-react-project/" className='btn-slice'>
                 <div className='slice-top'><span>Timer</span></div>
                 <div className='slice-bot'><span>Timer</span></div>
               </Link>
