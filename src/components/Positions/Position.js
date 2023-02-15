@@ -7,7 +7,7 @@ const Position = () => {
     <main className='position'>
       <h1> How to Meditate</h1>
 
-      <p> Before starting, make sure you're somewhere you can relax </p>
+      <p> Before starting, make sure you're somewhere you can relax. </p>
 
       <ol className='steps'>
 
@@ -21,7 +21,7 @@ const Position = () => {
         <li>2{")"} Set a time limit</li>
         <p>
           If you're a beginner, is better to start with a short time, such as 5 or 10 minutes.
-          The ideal would then be to reach 15 or 20 minutfes of session.
+          The ideal would then be to reach 15 or 20 minutes of session.
         </p>
         <li>3{")"} Focus on the breath</li>
         <p>
