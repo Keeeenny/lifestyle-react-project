@@ -1,48 +1,41 @@
-import { CHANGE_MIN, CHANGE_SEC, STOP_TIMER } from "./Actions/Actions"
+import { CHANGE_MIN, CHANGE_SEC, STOP_TIMER } from "./Actions/Actions";
 
 export let initialTime = {
-    min: 0,
-    sec: 0
-}
-
-
+  min: 0,
+  sec: 0,
+};
 
 const TimerReducer = (state, action) => {
+  const { type, payload } = action;
 
-    const{ type, payload } = action
+  switch (type) {
+    case CHANGE_MIN:
+      initialTime = {
+        ...initialTime,
+        min: payload.time,
+      };
 
-    switch (type) {
-        case CHANGE_MIN:
+      break;
 
-        initialTime = {
-            ...initialTime,
-            min: payload.time
-        }
+    case CHANGE_SEC:
+      initialTime = {
+        ...initialTime,
+        sec: payload.time,
+      };
 
+      break;
 
-            break
+    case STOP_TIMER:
+      initialTime = {
+        min: 0,
+        sec: 0,
+      };
 
-        case CHANGE_SEC:
+      break;
 
-        initialTime = {
-            ...initialTime,
-            sec: payload.time
-        }
+    default:
+      console.log("error");
+  }
+};
 
-            break
-            
-            case STOP_TIMER:
-
-        initialTime = {
-            min: 0,
-            sec: 0
-        }
-
-            break
-
-        default:
-            console.log("error")
-    }
-}
-
-export default TimerReducer
+export default TimerReducer;

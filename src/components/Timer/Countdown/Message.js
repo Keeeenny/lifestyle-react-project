@@ -4,7 +4,9 @@ import piano from "../../../assets/sounds/piano.mp3";
 
 const Message = ({ isShowing }) => {
   function play() {
-    new Audio(piano).play();
+    const audio = new Audio(piano);
+    audio.volume = 0.6;
+    audio.play();
   }
 
   useEffect(() => {

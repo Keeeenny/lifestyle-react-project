@@ -3,6 +3,7 @@ import { useTimeContext } from "../../../context/TimerContext";
 import Message from "./Message";
 import PauseButton from "./PauseButton";
 import "../../../assets/css/Timer/Countdown/Countdown.css";
+import rain from "../../../assets/sounds/rain.mp3";
 
 const Countdown = () => {
   const TimeContext = useTimeContext();
@@ -11,6 +12,7 @@ const Countdown = () => {
   const [seconds, setSeconds] = useState(TimeContext.initialTime.sec);
   const [isGoing, setIsGoing] = useState(true);
   const [timesUp, setTimesUp] = useState(false);
+  const [audio, setAudio] = useState(new Audio(rain));
 
   function calculateEndTime(min, sec) {
     const minutesInMs = min * 60 * 1000;
@@ -58,6 +60,24 @@ const Countdown = () => {
 
   const min = minutes < 10 ? `0${minutes}` : minutes;
   const sec = seconds < 10 ? `0${seconds}` : seconds;
+
+  //Background Audio
+  useEffect(() => {
+    audio.volume = 0.5;
+    audio.loop = true;
+    if (isGoing) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+
+    // Cleanup function when the component unmounts
+    return () => {
+      // setAudio(null);
+      audio.pause();
+    };
+  }, [isGoing, audio]);
+
 
   return (
     <div className="countdown">
