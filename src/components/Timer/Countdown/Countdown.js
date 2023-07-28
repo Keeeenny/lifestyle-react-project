@@ -71,13 +71,10 @@ const Countdown = () => {
       audio.pause();
     }
 
-    // Cleanup function when the component unmounts
     return () => {
-      // setAudio(null);
       audio.pause();
     };
   }, [isGoing, audio]);
-
 
   return (
     <div className="countdown">
